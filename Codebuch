@@ -1,0 +1,52 @@
+Codebuch Stand 23.02.2021
+erstellt von Lena Klasen (lk158@hdm-stuttgart.de)
+Inhalt
+
+    Edges.csv (Edgelist)
+    Nodes.csv (Nodelist)
+    Codebuch.rm (Codierung der Datensätze)
+
+Ursprung und Datenerhebung
+
+Datenerhebung der VBF Mitglieder und deren Mitgliedschaften in Organisationen und Vereinen hauptsächlich über die VFB-Vereinsseite und das Munzingerarchiv. 
+
+Das Netzwerk ist ein ungerichtetes two-mode Netzwerk. Es besteht aus VFB-Vorstandsmitgliedern und Organisationen
+
+
+EDGE-Attribute
+
+id
+pro Mitglied bzw. Organisation eine ID bestehend aus den Anfangsbuchstaben des Namens
+
+from
+das entsprechende Mitglied
+
+to
+die entsprechende Organisation
+
+
+NODE-Attribute
+
+id
+Identische ID wie aus der edgelist zur Identifikation der Knoten. 
+
+name
+der volle Name der Person/Organisation
+
+age
+Alter der Person bzw. Gründung der Organisation
+
+
+type
+0 - VFB-Vorstandsmitglied
+1 - Organisation
+
+function
+AR- Aufsichtsrat
+V - Vorsitz
+
+representation
+Tätigkeitsbereich (Sport, Kommunikation, Politik, Finanzen)
+
+position
+Position im VFB Vorstand (Vorsitz, Mitglied Geschaeftsleitung, Vorsitz Aufsichtsrat, Stellvertretender Vorsitz Aufsichtsrat, Mitglied Praesidium, Mitgleid Aufsichtsrat)
